@@ -12,9 +12,27 @@ h2 {
 header h2 {
   color: yellowgreen; }
 
-node .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0; }
+  footer {
+    color: #caced1 
+}
+
+li {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.Careers {
+    cursor: pointer;
+    color: #1E88E5
+}
+
+.row-1 {
+    background-color: #1E242A 
+}
+
+.row-2 {
+    background-color: #28323C 
+  }
 
 .jumbotron {
   margin: 0;
@@ -27,8 +45,12 @@ node .site-footer {
   border-bottom: 1px ridge;
   min-height: 200px; }
 
+
 .navbar {
-  background-color: #901CAD; }
+  background-color:#007bff;
+  padding: 0px;
+  height: 50px; 
+}
 
 .tab-content {
   border: 1px solid #DDD;
@@ -135,7 +157,7 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 /* Mobile */
 
-@media screen and (max-width:500px){
+/* @media screen and (max-width:500px){
   #logreg-forms{
       width:300px;
   }
@@ -166,7 +188,7 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   #logreg-forms  .google-btn:after{
       content:'Google+';
   }
-  
+   */
 }
 
 
