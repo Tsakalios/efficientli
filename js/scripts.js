@@ -1,30 +1,41 @@
 $(function() {
-    $(".carousel").carousel({
-        interval: 2000
-    });
-    $("#carouselButton").click(function() {
-        if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-            $(".carousel").carousel("pause");
-            $("#carouselButton").children("i").removeClass("fa-pause");
-            $("#carouselButton").children("i").addClass("fa-play");
-        } else {
-            $(".carousel").carousel("cycle");
-            $("#carouselButton").children("i").removeClass("fa-play");
-            $("#carouselButton").children("i").addClass("fa-pause");
-        }
-    });
+    
+// Toggle Button 
+    
+        $("#sidebarCollapse").on('click', function () {
+          $("#sidebar").toggleClass('active');
+        });
 
-    $("#reserveButton").click(function() {
-        $('#reserveModal').modal('show');
-    });
-
-    $("#loginButton").click(function() {
-        $('#loginModal').modal('show');
-    });
-    $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-    });
-
+        // Chart
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                datasets: [{
+                    data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                    lineTension: 0,
+                    backgroundColor: 'transparent',
+                    borderColor: '#007bff',
+                    borderWidth: 4,
+                    pointBackgroundColor: '#007bff'
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: false
+                        }
+                    }]
+                },
+                legend: {
+                    display: false,
+                }
+            }
+        });
+      
+    // Login
     
     function toggleResetPswd(e){
         e.preventDefault();
@@ -44,5 +55,6 @@ $(function() {
         $('#logreg-forms #cancel_reset').click(toggleResetPswd);
         $('#logreg-forms #btn-signup').click(toggleSignUp);
         $('#logreg-forms #cancel_signup').click(toggleSignUp);
-    })
+    });
+
 });

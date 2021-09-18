@@ -2,7 +2,7 @@
     "name": "efficientli",
     "version": "1.0.0",
     "description": "This is a software development issue tracker.",
-    "main": "index.htm",
+    "main": "login.htm",
     "scripts": {
         "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
         "clean": "rimraf dist",
@@ -16,7 +16,7 @@
         "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
         "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
     },
-    "author": "LRoubas",
+    "author": "LeoR",
     "license": "ISC",
     "devDependencies": {
         "copyfiles": "^2.4.1",
