@@ -15,21 +15,8 @@ h3 {
 
 #sidebar {
   min-width: 250px;
-  max-width: 250px;
-  background: #262933;
-  color: #fff;
-  transition: all 0.4s;
-  height: 100vh;
-}
 
-#sidebar.active {
-  margin-left: -250px;
-}
 
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: #1b1d24;
-}
 
 #sidebar ul.components {
   padding: 20px 0;
@@ -207,6 +194,8 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 .form-signup .social-login{
   width:210px !important;
   margin: 0 auto;
+
+  
 }
 
 /* Mobile */
